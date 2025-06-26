@@ -16,7 +16,8 @@ const broadcast = () => {
 
   wsServer.clients.forEach(client => {
     if (client.readyState === client.OPEN) {
-      client.send(message);
+     
+      console.log(message)
     }
   });
 };
